@@ -15,6 +15,7 @@ docker ps
 ```
 docker ps -a
 ```
+
 # Comandos relacionados à execução
 #### Cria um container com a respectiva imagem passada como parâmetro.
 ```
@@ -83,14 +84,29 @@ docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM
 docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM CAMINHO_DOCKERFILE
 ```
 
-    Comandos relacionados ao Docker Hub
-        docker login - inicia o processo de login no Docker Hub.
-        docker push NOME_USUARIO/NOME_IMAGEM - envia a imagem criada para o Docker Hub.
-        docker pull NOME_USUARIO/NOME_IMAGEM - baixa a imagem desejada do Docker Hub.
+# Comandos relacionados ao Docker Hub
+#### Inicia o processo de login no Docker Hub.
+```
+docker login
+```
+#### Envia a imagem criada para o Docker Hub.
+```
+docker push NOME_USUARIO/NOME_IMAGEM
+```
+#### Baixa a imagem desejada do Docker Hub.
+```
+docker pull NOME_USUARIO/NOME_IMAGEM
+```
 
-    Comandos relacionados à rede
-        hostname -i - mostra o ip atribuído ao container pelo docker (funciona apenas dentro do container).
-        docker network create --driver bridge NOME_DA_REDE - cria uma rede especificando o driver desejado.
+# Comandos relacionados à rede
+#### Mostra o ip atribuído ao container pelo docker (funciona apenas dentro do container).
+```
+hostname -i
+```
+#### Cria uma rede especificando o driver desejado.
+```
+docker network create --driver bridge NOME_DA_REDE
+```
 
     Comandos relacionados ao docker-compose
         docker-compose build - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
