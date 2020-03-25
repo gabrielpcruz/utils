@@ -20,4 +20,4 @@ $  sudo service mysql start
 
 # for more details access the link above
 
-[Change user password in MySql 5.7] (https://www.percona.com/blog/2016/03/16/change-user-password-in-mysql-5-7-with-plugin-auth_socket/)
+[Change user password in MySql 5.7](https://www.percona.com/blog/2016/03/16/change-user-password-in-mysql-5-7-with-plugin-auth_socket/)
