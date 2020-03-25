@@ -1,4 +1,4 @@
-## Comandos relacionados às informações
+# Comandos relacionados às informações
 #### Exibe a versão do docker que está instalada.
 ```
 docker version
@@ -15,7 +15,7 @@ docker ps
 ```
 docker ps -a
 ```
-## Comandos relacionados à execução
+# Comandos relacionados à execução
 #### Cria um container com a respectiva imagem passada como parâmetro.
 ```
 docker run NOME_DA_IMAGEM
