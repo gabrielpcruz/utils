@@ -108,8 +108,18 @@ hostname -i
 docker network create --driver bridge NOME_DA_REDE
 ```
 
-    Comandos relacionados ao docker-compose
-        docker-compose build - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
-        docker-compose up - Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
-        docker-compose down - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
+# Comandos relacionados ao docker-compose
+#### Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
+```
+docker-compose build
+```
 
+#### Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
+```
+docker-compose up
+```
+
+#### Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
+```
+docker-compose down
+```
