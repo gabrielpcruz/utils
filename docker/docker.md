@@ -41,21 +41,47 @@ docker run -v "CAMINHO_VOLUME" NOME_DA_IMAGEM
 docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM
 ```
 
+# Comandos relacionados à inicialização/interrupção
+#### Inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
+```
+docker start ID_CONTAINER
+```
+#### Inicia o container com id em questão.
+```
+docker start -a -i ID_CONTAINER
+```
+#### Interrompe o container com id em questão.
+```
+docker stop ID_CONTAINER
+```
 
-    Comandos relacionados à inicialização/interrupção
-        docker start ID_CONTAINER - inicia o container com id em questão.
-        docker start -a -i ID_CONTAINER - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
-        docker stop ID_CONTAINER - interrompe o container com id em questão.
+# Comandos relacionados à remoção
+#### Remove o container com id em questão.
+```
+docker rm ID_CONTAINER
+```
+#### Remove todos os containers que estão parados.
+```
+docker container prune
+```
+#### Remove a imagem passada como parâmetro.
+```
+docker rmi NOME_DA_IMAGEM
+```
 
-    Comandos relacionados à remoção
-        docker rm ID_CONTAINER - remove o container com id em questão.
-        docker container prune - remove todos os containers que estão parados.
-        docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.
-
-    Comandos relacionados à construção de Dockerfile
-        docker build -f Dockerfile - cria uma imagem a partir de um Dockerfile.
-        docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM - constrói e nomeia uma imagem não-oficial.
-        docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM CAMINHO_DOCKERFILE - constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
+# Comandos relacionados à construção de Dockerfile
+#### Cria uma imagem a partir de um Dockerfile.
+```
+docker build -f Dockerfile
+```
+#### Constrói e nomeia uma imagem não-oficial.
+```
+docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM
+```
+#### Constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
+```
+docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM CAMINHO_DOCKERFILE
+```
 
     Comandos relacionados ao Docker Hub
         docker login - inicia o processo de login no Docker Hub.
