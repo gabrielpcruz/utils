@@ -51,7 +51,7 @@ E para executar o Docker sem precisar de sudo, adicione o seu usuário ao grupo 
 sudo usermod -aG docker $(whoami)
 ```
 
-#### Das vezes que tentei executar o comando acima, deu o seguinte:
+Das vezes que tentei executar o comando acima, deu o seguinte:
 ```
 ubuntu@node1:~$ docker run hello-world
 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
