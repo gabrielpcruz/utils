@@ -13,7 +13,7 @@
 ### Para rodar o script usando o bash basta: 
 
 ```
-1. Criar um arquivo **.sh** na sua máquina com este conteúdo.
+1. Criar um arquivo .sh na sua máquina com este conteúdo.
 2. Alterar *X.X* para a versão do PHP desejada.
 3. Rodar o script
 ```
