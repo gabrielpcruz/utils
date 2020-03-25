@@ -1,9 +1,9 @@
 # DIRECTORY COMMANDS
 
-   #creating a simple diretory
+   ## creating a simple diretory
 
       mkdir your-directory/
 	
-   #creating a recursive directory
+   ## creating a recursive directory
 
       mkdir -p your-first-directory/your-n-directory/ 
